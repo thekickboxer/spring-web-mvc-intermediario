@@ -1,18 +1,20 @@
 package br.com.dio.springwebmvcintermediario.dto;
 
+import br.com.dio.springwebmvcintermediario.enums.Raca;
+
 public class Soldado {
 
     private Long id;
     private String cpf;
     private String nome;
-    private String raca;
+    private Raca raca;
     private String arma;
     private String status;
 
     public Soldado() {
     }
 
-    public Soldado(Long id, String cpf, String nome, String raca, String arma, String status) {
+    public Soldado(Long id, String cpf, String nome, Raca raca, String arma, String status) {
         this.id = id;
         this.cpf = cpf;
         this.nome = nome;
@@ -45,11 +47,11 @@ public class Soldado {
         this.nome = nome;
     }
 
-    public String getRaca() {
+    public Raca getRaca() {
         return raca;
     }
 
-    public void setRaca(String raca) {
+    public void setRaca(Raca raca) {
         this.raca = raca;
     }
 
